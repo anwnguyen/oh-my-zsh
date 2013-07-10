@@ -40,8 +40,17 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git ruby osx brew sublime rails postgres npm node history gem cp bundler)
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH/templates/aliases.zsh-template
+source $ZSH/templates/variables.zsh-template
+source $ZSH/templates/secrets.zsh-template
 
 # Customize to your needs...
+  unalias run-help
+  autoload run-help
+  HELPDIR=/usr/local/share/zsh/helpfiles
+
+  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
