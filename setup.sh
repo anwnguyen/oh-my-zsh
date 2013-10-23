@@ -5,6 +5,7 @@ brew upgrade
 brew install `cat homebrew_packages.txt`
 
 [ ! -f ~/.zshrc ]          && cp ~/.oh-my-zsh/templates/zshrc.zsh-template          ~/.zshrc
+[ ! -f ~/.gitconfig ]      && cp ~/.oh-my-zsh/templates/gitconfig.zsh-template      ~/.gitconfig
 [ ! -f ~/.variables ]      && cp ~/.oh-my-zsh/templates/variables.zsh-template      ~/.variables
 [ ! -f ~/.aliases ]        && cp ~/.oh-my-zsh/templates/aliases.zsh-template        ~/.aliases
 [ ! -f ~/.secrets ]        && cp ~/.oh-my-zsh/templates/secrets.zsh-template        ~/.secrets
