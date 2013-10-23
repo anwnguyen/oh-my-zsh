@@ -39,5 +39,4 @@ v8
 vim
 wget
 xz
-zlib
 zsh
