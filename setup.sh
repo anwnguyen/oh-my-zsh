@@ -14,3 +14,6 @@ brew install `cat homebrew_packages.txt`
 
 sudo echo "/usr/local/bin/zsh" >> /etc/shells  # TODO grep to ensure that this line isn't there before appending it
 sudo chsh -s /usr/local/bin/zsh `whoami`
+
+CONFIGURE_OPTS="--disable-install-doc --with-readline-dir=/usr/local/opt/readline --with-openssl-dir=/usr/local/opt/openssl --without-tcl --without-tk " rbenv install 2.0.0-p247
+
